@@ -1,0 +1,8 @@
+function sleep (ms) { 
+    return new Promise (resolve => setTimeout (resolve, ms)); 
+}
+ContinueCycle = true
+while (ContinueCycle) { 
+    await sleep (2000); 
+    window.scrollTo (0, document.body.scrollHeight); 
+}
